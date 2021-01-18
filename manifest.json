@@ -1,0 +1,9 @@
+ {
+    "name": "Mind me please",
+    "version": "0.1",
+    "description": "Health reminders while working on the desk",
+    "permissions": [
+    	"storage"
+    ],
+    "manifest_version": 2
+  }
