@@ -1,9 +1,19 @@
- {
-    "name": "Mind me please",
-    "version": "0.1",
-    "description": "Health reminders while working on the desk",
-    "permissions": [
-    	"storage"
-    ],
-    "manifest_version": 2
-  }
+{
+	"manifest_version": 3,
+	"name": "Mind me please",
+	"version": "1.0",
+	"description": "Health reminders while working on the desk",
+	"icons": {
+		"128": "assets/png/icon128.png",
+		"48": "assets/png/icon48.png",
+		"32": "assets/png/icon32.png",
+		"16": "assets/png/icon16.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_title": "Mind me please",
+		"default_popup": "popup/index.html"
+	}
+}
