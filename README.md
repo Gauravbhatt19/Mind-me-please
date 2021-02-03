@@ -10,4 +10,4 @@ Health reminders while working on the desk.
 	- stretch your arms
 	- drink some water
 	- walk a bit
-- Individuals can set their reminder time and can check for the list of notifications.
+- Individuals can set their reminder for any/all of the above.
