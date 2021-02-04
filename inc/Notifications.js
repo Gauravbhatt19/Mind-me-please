@@ -1,5 +1,5 @@
 class Notification {
-	constructor(id, title, quote, cycleTime, skippedCycleTime) {
+	constructor(id, title, quote, cycleTime) {
 		this.id = id;
 		this.title = title;
 		this.quote = quote;
