@@ -15,5 +15,6 @@
 	"action": {
 		"default_title": "Mind me please",
 		"default_popup": "popup/index.html"
-	}
+	},
+	"permissions": ["storage"]
 }

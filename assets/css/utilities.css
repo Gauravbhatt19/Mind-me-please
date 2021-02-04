@@ -1,3 +1,69 @@
-/**
- * Style utilities classes definition here
- */
+:root {
+	--gray: #E4E4E4;
+	--primary: #2EB5F2;
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.py-5 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.py-3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.float-right {
+	float: right;
+}
+
+.min-w-350 {
+	min-width: 350px;
+}
+
+.w-275 {
+	width: 275px;
+}
+
+.border-1 {
+	border: 1px solid;
+}
+
+.border-gray {
+	border-color: var(--gray);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.fz-18 {
+	font-size: 18px;
+}
+
+.c-pointer {
+	cursor: pointer;
+}
+
+.d-none {
+	display: none;
+}
+
+.user-select-none {
+	user-select: none;
+}
+
+a.link-primary:link,
+a.link-primary:visited,
+a.link-primary:hover,
+a.link-primary:active {
+	color: var(--primary);
+}
+
+a.link-primary:hover {
+	font-weight: bold;
+}
