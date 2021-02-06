@@ -6,7 +6,10 @@ $(function() {
 	var toggleSwitchElements = '<div><span class="on">On</span><span class="off">Off</span></div><i></i>';
 
 	chrome.storage.sync.get(['checkedNotifications'], function(storedData) {
-		var storedCheckedNotifications = JSON.parse(storedData.checkedNotifications, false);
+		var storedCheckedNotifications = (
+			Object.keys(storedData).length !== 0 &&
+			storedData.constructor === Object
+			) ? JSON.parse(storedData.checkedNotifications, false) : [];
 		$('.notifications-container').on('change', 'input[type="checkbox"]', function() {
 			if (!$(this).hasClass('notify-all')) {
 				var isAllChecked = true;

@@ -1,5 +1,8 @@
 chrome.storage.sync.get(['checkedNotifications'], function(storedData) {
-	var storedCheckedNotifications = JSON.parse(storedData.checkedNotifications, false);
+	var storedCheckedNotifications = (
+			Object.keys(storedData).length !== 0 &&
+			storedData.constructor === Object
+			) ? JSON.parse(storedData.checkedNotifications, false) : [];
 
 	chrome.alarms.onAlarm.addListener(function(alarm) {
 		var checkedNotification = getObjectElement(storedCheckedNotifications, 'id', alarm.name);
