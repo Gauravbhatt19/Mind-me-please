@@ -9,9 +9,10 @@ Chrome extension that will help you to stay healthier. It nudges you periodicall
 
 #### Getting Started:
 
+1. [Add to chrome](https://chrome.google.com/webstore/detail/mind-me-please/jandofaifgkpdkhnlmdfdmenphiooopg)
 1. Set exercise(s)<br>
 ![Alt Popup](./screenshots/popup.png?raw=true "Popup Window Screenshot")
-2. Receive notification<br>
+1. Receive notification<br>
 ![Alt Notification](./screenshots/notification.png?raw=true "Notification Screenshot")
 
 #### Directory Structure:
