@@ -18,6 +18,10 @@ chrome.storage.sync.get(['checkedNotifications'], function(storedData) {
 			priority: 0
 		});
 	});
+
+	chrome.runtime.onStartup.addListener(function () {
+		setAlarms(storedCheckedNotifications);
+	});
 });
 
 function getObjectElement(haystack, key, value) {
@@ -27,4 +31,17 @@ function getObjectElement(haystack, key, value) {
 		}
 	}
 	return false;
+}
+
+function setAlarms(checkedNotifications){
+	chrome.alarms.clearAll();
+	checkedNotifications.forEach(function(notification){
+		chrome.alarms.create(
+			notification.id,
+			{
+				when: Date.now() + notification.cycleTime * 60000,
+				periodInMinutes: notification.cycleTime
+			}
+		);
+	});
 }

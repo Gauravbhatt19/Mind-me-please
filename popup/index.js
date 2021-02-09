@@ -49,6 +49,7 @@ function getCheckedNotifications(storedCheckedNotifications) {
 					'id': checkedNotification.id,
 					'title': checkedNotification.title,
 					'quote': checkedNotification.quote,
+					'cycleTime': checkedNotification.cycleTime
 				});
 			}
 		}
